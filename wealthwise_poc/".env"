@@ -1,7 +1,6 @@
 # --- LLM API Keys (The Brains) ---
 # Required for Member A (PandasAI) & Member D (Logic)
-OPENAI_API_KEY=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
-
+OPENAI_API_KEY=-----
 # Required for Member B (PDF Parsing)
 # Get this from cloud.llamaindex.ai (Free Tier is sufficient)
 LLAMA_CLOUD_API_KEY=llx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
