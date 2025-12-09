@@ -1,0 +1,6 @@
+streamlit
+pandas
+presidio-analyzer
+presidio-anonymizer
+spacy
+pypdf
