@@ -1,0 +1,148 @@
+{
+  "tiers": [
+    {
+      "tier": "Tier 1",
+      "priority": "mandatory",
+      "description": "Core legal corpus required for any Income-tax RAG or agentic system",
+      "documents": [
+        {
+          "name": "Income-tax Act, 1961",
+          "type": "act",
+          "contains": [
+            "section_headings",
+            "sub_sections",
+            "explanations",
+            "provisos",
+            "schedules"
+          ]
+        },
+        {
+          "name": "Income-tax Rules, 1962",
+          "type": "rules",
+          "contains": [
+            "rule_text",
+            "sub_rules",
+            "forms",
+            "rule_linked_annexures"
+          ]
+        },
+        {
+          "name": "Latest Finance Acts / Amendments",
+          "type": "amendment",
+          "contains": [
+            "section_modifications",
+            "rate_changes",
+            "threshold_changes",
+            "effective_dates"
+          ],
+          "purpose": "Keeps the Act and Rules updated for current AY/FY"
+        }
+      ]
+    },
+    {
+      "tier": "Tier 2",
+      "priority": "strongly_recommended",
+      "description": "Improves practical accuracy, usability, and real-world applicability",
+      "documents": [
+        {
+          "name": "CBDT Notifications",
+          "type": "notification",
+          "contains": [
+            "procedure_changes",
+            "rate_changes",
+            "form_updates",
+            "compliance_rules"
+          ]
+        },
+        {
+          "name": "CBDT Circulars / Clarifications",
+          "type": "circular",
+          "contains": [
+            "interpretational_guidance",
+            "implementation_rules",
+            "departmental_views"
+          ]
+        },
+        {
+          "name": "Taxpayer Information Booklets / Guides",
+          "type": "guides",
+          "legal_weight": "non_binding",
+          "contains": [
+            "simplified_explanations",
+            "examples",
+            "faq_style_content"
+          ]
+        },
+        {
+          "name": "Forms and Instructions",
+          "type": "procedural",
+          "contains": [
+            "ITR_forms",
+            "TDS_TCS_forms",
+            "audit_forms",
+            "filing_instructions",
+            "schedule_mappings"
+          ],
+          "purpose": "Procedural Q&A such as which form, how to file, which schedule"
+        },
+        {
+          "name": "Rate Tables / Reference Tables",
+          "type": "structured_data",
+          "storage_recommendation": "database_or_json",
+          "contains": [
+            "tax_slabs_by_year",
+            "surcharge_rates",
+            "cess_rates",
+            "TDS_TCS_rates",
+            "interest_rates_234A_234B_234C",
+            "penalty_tables"
+          ]
+        },
+        {
+          "name": "Leakage Database",
+          "type": "knowledge_base",
+          "purpose": "Identify commonly missed deductions and exemptions",
+          "contains": {
+            "section_80C": [
+              "tuition_fees",
+              "principal_repayment_home_loan",
+              "stamp_duty",
+              "registration_charges"
+            ],
+            "section_10_14_allowances": [
+              "uniform_allowance",
+              "research_allowance",
+              "books_and_periodicals"
+            ],
+            "section_80D": [
+              "preventive_health_checkup_limit_5000"
+            ],
+            "section_80GG": [
+              "rent_deduction_without_HRA"
+            ],
+            "section_80TTA_80TTB": [
+              "savings_bank_interest_deduction"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tier": "Tier 3",
+      "priority": "optional",
+      "description": "Adds legal interpretation depth for advanced or professional use cases",
+      "documents": [
+        {
+          "name": "Case Law (Selected and Curated)",
+          "type": "judicial_precedent",
+          "contains": [
+            "supreme_court_judgments",
+            "high_court_judgments",
+            "ITAT_rulings"
+          ],
+          "selection_strategy": "landmark_and_frequently_cited_cases"
+        }
+      ]
+    }
+  ]
+}
